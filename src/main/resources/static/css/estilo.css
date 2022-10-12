@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-login {
+    width: 70%;
+    max-width: 1600px;
+    margin: auto;
+    margin-top: 15vh;
+}
+
+.form-login {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 20px;
+}
+
+.logo-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-login img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.form {
+    width: 80%;
+    margin: auto;
+    padding: 20px 40px;
+    position: relative;
+}
+
+.title-login,
+.form p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+    padding: 0px 0px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+hr {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.datos-login {
+    width: 70%;
+    margin: 40px auto;
+}
+
+.form .datos,
+.select {
+    cursor: pointer;
+    width: 100%;
+    padding: 8px 10px;
+    margin: 30px 0px;
+    border-radius: 5px;
+    border: solid gray 2px;
+    font-size: 1.2rem;
+    outline: none;
+    box-shadow: 4px 8px 20px -5px rgba(0, 0, 0, 0.281);
+    font-family: 'Heebo', sans-serif;
+    font-weight: 300;
+}
+
+.select {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.form .datos:focus {
+    transition: all 0.4s ease;
+    border: solid #3B71CA 2px;
+    outline: none;
+}
+
+
+.btn-rol {
+    padding: 12px 40px;
+    margin: 5px 0px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 4px 8px 20px -5px rgba(0, 0, 0, 0.82);
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+.btn-login {
+    padding: 12px 40px;
+    margin: 20px 0px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #3B71CA;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 4px 8px 20px -5px rgba(0, 0, 0, 0.82);
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+.btn-login:hover {
+    background-color: #3f7cdf;
+    box-shadow: 4px 8px 20px -5px rgb(0, 0, 0.5);
+}
+
+@media (max-width: 1400px){
+    .container-login {
+        width: 80%;
+        margin-top: 10vh;
+
+    }
+
+    .form-login {
+        grid-template-columns: 30% 70%;
+        gap: 10px;
+    }
+    .form-login img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .form {
+        width: 80%;
+        margin: auto;
+        padding: 20px 40px;
+        position: relative;
+    }
+
+    .title-login,
+    .form p {
+       padding: 20px 0px;
+        font-size: 2.2rem;
+    }
+
+    hr {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .datos-login {
+        width: 80%;
+        margin: 40px auto;
+    }
+
+
+    .btn-rol {
+        padding: 10px 30px;
+        margin: 5px 0px;
+        font-size: 1rem;
+    }
+
+
+    .btn-login {
+        padding: 10px 30px;
+        margin: 10px 0px 0px 0px;
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width:1100px) {
+
+    .container-login {
+        width: 85%;
+        margin-top: 10vh;
+    }
+
+    .form-login {
+        grid-template-columns: 30% 70%;
+        gap: 5px;
+    }
+
+    .form-login img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .form {
+        width: 90%;
+        margin: auto;
+        padding: 20px 20px;
+        position: relative;
+    }
+
+    .title-login,
+    .form p {
+        padding: 30px 0px;
+        font-size: 2rem;
+    }
+
+    hr {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .datos-login {
+        width: 80%;
+        margin: 40px auto;
+    }
+
+
+    .btn-rol {
+        padding: 10px 30px;
+        margin: 5px 0px;
+        font-size: 1rem;
+    }
+
+
+
+    .btn-login {
+        padding: 10px 30px;
+        margin: 10px 0px 0px 0px;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width : 1000px) {
+
+    .container-login {
+        width: 100%;
+        margin-top: 5vh;
+    }
+
+    .form-login {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .form-login img {
+        width: 40%;
+        border-radius: 50%;
+    }
+
+    .form {
+        width: 90%;
+        margin: auto;
+        padding: 40px 20px;
+        position: relative;
+    }
+
+    .title-login,
+    .form p {
+        padding: 30px 0px;
+        font-size: 2.5rem;
+    }
+
+    hr {
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    .datos-login {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .datos-login .datos {
+        cursor: pointer;
+        width: 100%;
+        padding: 12px 10px;
+        margin: 30px auto;
+        border-radius: 5px;
+        border: solid gray 2px;
+        font-size: 1.5rem;
+
+    }
+
+
+    .btn-rol {
+        padding: 20px 60px;
+        margin: 5px 0px;
+        font-size: 1.5rem;
+    }
+
+
+
+    .btn-login {
+        padding: 20px 60px;
+        margin: 15px 0px 0px 0px;
+        font-size: 1.5rem;
+    }
+
+}

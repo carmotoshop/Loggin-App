@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/estilo.css" rel="stylesheet" >
+    <link rel="shortcut icon" href="../img/Logo_simple.jpg" type="image/x-icon">
+    <title>Bienvenido Admistrador</title>
+
+</head>
+<body>
+
+<div class="container-login">
+    <div class="form-login">
+        <div class="logo-login">
+            <img src="../img/logo_Mesa de trabajo 1.svg" alt="">
+        </div>
+        <div class="form">
+            <h2 class="title-login">Sistema de Control Administrador</h2>
+            <hr>
+            <form class="datos-login"  th:action="@{/admin/login}" method="post">
+                <div th:if="${param.error}">
+                    <h3 style="color:red">[[${session.SPRING_SECURITY_LAST_EXCEPTION.message}]]</h3>
+                </div>
+                <input class="datos" type="text" name="email" placeholder="Usuario">
+                <input class="datos" type="password" name="password"  placeholder="Contraseña">
+
+                <input class="btn-login" type="submit" value="Ingresar">
+            </form>
+            <form class="datos-login"  th:action="@{/}"  action="post">
+                <input type="submit" class="btn-rol" value="Salir">
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

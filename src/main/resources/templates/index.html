@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/seleccion.css">
+    <link rel="shortcut icon" href="../img/Logo_simple.jpg" type="image/x-icon">
+    <title>Bienvenido al Login del Proyecto</title>
+</head>
+
+<body>
+
+<div class="fondo-gradiente">
+
+    <div class="container-login">
+        <h2 class="titulo">Bienvenido a CarmotoShop</h2>
+        <h3 class="sub-seleccion"> Por favor seleccione su rol en la empresa</h3>
+        <!-- Con th:href utilizamos thymeleaf para redirigirnos a MainController
+        y entar en el metodo que tiene ese GetMapping-->
+        <div class="container-rol">
+            <a class="admin" th:href="@{/admin/login}"> ADMIN</a>
+            <a class="user" th:href="@{/customer/login}"> USUARIO </a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+</html>
